@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
@@ -10,20 +16,45 @@
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
+      <h1>World Clock🌍</h1>
 
       <select id="city">
         <option value="">Select a city...</option>
         <option value="current">My current location</option>
-        <option value="Europe/London">London</option>
-        <option value="America/New_York">New York</option>
+        <option value="Europe/Athens">Athens</option>
         <option value="Pacific/Auckland">Auckland</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-        <option value="Pacific/Honolulu">Honolulu</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="America/Bogota">Bogota</option>
+        <option value="America/Cancun">Cancun</option>
+        <option value="America/Caracas">Caracas</option>
+        <option value="America/Chicago">Chicago</option>
+
         <option value="Africa/Gaborone">Gaborone</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
+        <option value="Africa/Kampala">Kampala</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Madrid">Madrid</option>
+
+        <option value="Africa/Nairobi">Nairobi</option>
+        <option value="America/New_York">New York</option>
+        <option value="America/Phoenix">Phoenix</option>
+        <option value="Europe/Rome">Rome</option>
+        <option value="America/Sao_Paulo">Sao Paulo</option>
+        <option value="Asia/Shanghai">Shanghai</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Europe/Zurich">Zurich</option>
       </select>
 
       <div id="cities">
+        <div class="city" id="gaborone">
+          <div>
+            <h2>Gaborone</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
         <div class="city" id="los-angeles">
           <div>
             <h2>Los Angeles</h2>
@@ -32,28 +63,29 @@
           <div class="time"></div>
         </div>
 
-        <div class="city" id="paris">
+        <div class="city" id="puertorico">
           <div>
-            <h2>Paris</h2>
+            <h2>Puerto Rico</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
       </div>
     </div>
+
     <footer>
       This project was coded by
       <a href="https://github.com/thandierab" target="_blank"
         >Thandie Rabasimane</a
       >
-      and is
+      , is on
       <a href="https://github.com/thandierab/WorldClock" target="_blank">
-        on GitHub</a
+        GitHub</a
       >
-      and
-      <a href="https://thandierab-worldclock.netlify.app" target="_blank"
-        >hosted on Netlify</a
-      >
+      , and hosted on
+      <a href="https://thandierab-worldclock.netlify.app" target="_blank">
+        Netlify</a
+      >.
     </footer>
     <script src="javascript/script.js"></script>
   </body>
